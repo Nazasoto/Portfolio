@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio - Nazareno Soto</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <!-- Consola Interactiva -->
+    <main class="console-container">
+        <div class="console-header">
+            <div class="console-buttons">
+                <div class="button button-red"></div>
+                <div class="button button-yellow" onclick="toggleMinimize()"></div>
+                <div class="button button-green" onclick="toggleMaximize()"></div>
+            </div>
+            <div class="console-title">Portfolio</div>
+        </div>
+        <div class="console-body">
+            <div class="output-area">
+                <p>¡Hola! Soy Nazareno Soto. Backend Developer</p>
+                <p>Escribe <span style="color: rgb(4, 187, 4);">help</span> para ver la lista de comandos</p>
+            </div>
+            <div class="input-area">
+                <span class="prompt">$</span>
+                <input type="text" class="input-field" placeholder="Ingresa tu comando">
+            </div>
+        </div>
+    </main>
+
+    <script src="commands.js"></script>
+    <script src="script.js"></script>
+    
+</body>
+</html>
