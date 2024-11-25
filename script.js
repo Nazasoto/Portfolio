@@ -3,7 +3,7 @@ document.querySelector('.input-field').addEventListener('keypress', function (e)
         const command = this.value.trim(); // Limpia espacios adicionales
         const outputArea = document.querySelector('.output-area');
 
-        if (command === "clear") {
+        if (command.toLowerCase() === "clear") {
             // Ejecuta la limpieza directamente si el comando es "clear"
             outputArea.innerHTML = "";
         } else {
