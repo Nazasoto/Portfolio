@@ -4,6 +4,7 @@ const commands = {
         return `
             <div class="folder" onclick="executeCommand('cd Lista')">📁 Lista de Tareas</div>
             <div class="folder" onclick="executeCommand('cd Proyecto')">📁 Proyecto Grámatica</div>
+            <div class="folder" onclick="executeCommand('cd Si')">📁 Si o no</div>
         `;
     },
 
@@ -14,7 +15,10 @@ const commands = {
             return "Descripción: Este pequeño proyecto web te permite gestionar tus tareas de una manera práctica y motivadora. \n Link:<a href='https://nazasoto.github.io/Lista-de-Tareas/'>Enlace</a>;";
         } else if (normalizedProject === "proyecto") {
             return "Descripción de Proyecto: Es una página sencilla en la que colaboré con una profesora para crear problemas gramaticales interactivos para que juegue con sus alumnos.\n Link:<a href='https://nazasoto.github.io/Proyecto-de-Gramatica/'>Enlace</a>";
-        } else {
+        }  else if (normalizedProject === "si") {
+            return "Descrición de Proyecto: Es una pagina super simple que es para invitar a salir a alguien.\n Link:<a href='https://nazasoto.github.io/Proyecto-de-Gramatica/'>Enlace</a>";
+        }
+        else {
             return `Proyecto no encontrado: ${project}`;
         }
     },
